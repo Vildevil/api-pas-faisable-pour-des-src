@@ -3,7 +3,7 @@ from flask_jwt_extended import create_access_token
 from models.coach import coaches
 from flask_restful import Resource, reqparse
 
-sec_password = "password"
+sec_password = "RkTgLq5maw^ba!$@&sFuEAJZL$eC6LUMrPspoj&8g8MC^ndyDhMSPLSE@uW@tY%^t3o@WtLmH4rzNaGArBsb%Whyi7GFgjW7S6cEkWNDpVH^C%af%LAZE5EnJEXbp^fW"
 
 def authenticate(username, password):
     user = next((coach for coach in coaches if coach.username == username), None)
